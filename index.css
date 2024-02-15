@@ -1,0 +1,451 @@
+body {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+.header {
+    background-image: url(./desktop/image-hero.jpg);
+    color: aliceblue;
+    background-repeat: round;
+    padding: 30px 50px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    background-size: cover;
+    overflow-x: hidden;
+    height: 93vh;
+    position: relative;
+    overflow-y: visible;
+}
+
+a:hover {
+    border-bottom: #ddd solid 4px;
+    transition: 400ms;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+
+.head {
+    margin: 5% 6%;
+    display: flex;
+    flex-wrap: wrap;
+    /* font-size: xx-large; */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.head div a {
+    padding: 0 10px;
+    font-size: x-large;
+}
+
+#sq {
+    font-size: large;
+    width: 35%;
+    font-size: 5vh;
+    margin: 7%;
+    border: 2px solid white;
+    padding: 0px 5%;
+    overflow-x: hidden;
+}
+
+#sq p {
+    font-weight: 100;
+    letter-spacing: 8px;
+
+}
+
+.center {
+    margin: 7% 5.3%;
+    width: 93%;
+    height: 300%;
+    display: flex;
+
+}
+
+.img {
+    /* float: left; */
+    margin: 3% -10% 0 5%;
+    width: 55%;
+    height: 600px;
+    background-image: url(./desktop/image-interactive.jpg);
+    background-size: cover;
+}
+
+
+.leder {
+    /* float: right; */
+    width: 36%;
+    z-index: index 3;
+    bottom: 20;
+    margin: 24% 5% 0 0;
+    padding: 2.5% 3.5%;
+    background-color: white;
+}
+
+.leder h2 {
+    letter-spacing: 8px;
+
+    font-size: xx-large;
+}
+
+.leder p {
+
+    font-size: large;
+}
+
+
+/* photo section */
+.photos_section {
+    /* background-color: aqu    a; */
+    width: 100%;
+    ;
+    padding: 0;
+}
+
+.photos_section>div {
+    display: flex;
+    margin: 2% 0 0 0;
+    justify-content: space-around;
+}
+
+.photos_section>div button:hover {
+    color: #ddd;
+    background-color: #000000;
+}
+
+.photos_section>div button {
+    width: 10vw;
+    height: 3vw;
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 2% 0 0 0;
+}
+
+.photos_section>div p {
+    font-size: xx-large;
+    font-weight: 300;
+    width: 52%;
+    letter-spacing: 10px;
+    font-family: 'Akatab';
+}
+
+.filters {
+    margin: 5% 5% 0 8%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 84%;
+}
+
+#myDiv {
+    margin: 0 5% 0 8%;
+    display: none;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+
+}
+
+.filters div {
+    height: 450px;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    align-items: end;
+    background-size: cover;
+    /* overflow: hidden; */
+    box-shadow: inset 0 -31px 29px 16px rgba(0, 0, 0, 0.5);
+}
+
+
+a img:hover {
+    transform: scale(110.3%);
+    color: aqua;
+    transition: 400ms;
+}
+
+.filters div:hover {
+    /* transform: scale(105.3%); */
+    transition: 400ms;
+    opacity: .4;
+    color: #000000;
+}
+
+.filters div P:hover {
+    color: #000000;
+
+}
+
+.filters div P {
+    margin: 0 23% 10%;
+    color: white;
+    font-size: xX-large;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'IBM Plex Sans Devanagari';
+    font-weight: 200;
+}
+
+
+/* navber ===================================== */
+
+.navber {
+    background-color: rgb(0, 0, 0);
+    padding: 5% 9% 0 9%;
+    width: 82%;
+    overflow-x: hidden;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    z-index: 1;
+    color: white;
+    margin: 10% 0 0 0;
+}
+
+.left {
+    width: 130%;
+}
+
+.left div a {
+    font-size: large;
+    margin: 2%;
+    width: 12%;
+}
+
+
+.logo a {
+    margin: 2%;
+}
+
+.logo p {
+    opacity: .7;
+}
+
+.dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 840px) {
+    .photos_section>div button {
+        width: 10vw;
+        height: 7vw;
+        font-size: 2vw;
+        font-weight: 500;
+        margin: 2% 0 0 0;
+    }
+
+    .img {
+        /* float: left; */
+        margin: 3% 10% 0 5%;
+        width: 80vw;
+        height: 500px;
+        float: none;
+    }
+
+
+    #info {
+        display: none;
+    }
+
+    .center {
+        display: block;
+    }
+
+
+    .leder h2,
+    .leder p {
+        text-align: center;
+        width: 190%;
+    }
+
+    .photos_section>div button {
+        font-size: small;
+        width: 200px;
+    }
+
+
+    .filters {
+        display: grid;
+        grid-template-columns: auto;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .filters div {
+        justify-content: center;
+        width: 90%;
+        background-image: url(./image-fisheye.jpg);
+        height: 500px;
+        display: flex;
+    }
+
+    #myDiv {
+        display: block;
+        width: 80%;
+        grid-template-columns: auto;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 85%;
+
+    }
+
+    .navber {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(11, 30, 30);
+        height: 120%;
+    }
+
+    .left div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .dropbtn {
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        margin: 5% 15% 0 0;
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+
+        margin-left: -20%;
+        color: rgb(255, 255, 255);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #sq {
+        margin-top: 35%;
+        font-size: 140%;
+    }
+
+    .header .links {
+        display: grid;
+        position: relative;
+
+    }
+}
+
+
+/* //////////////////////////////////////////////////////////////////////// */
+.header .links {
+    position: relative;
+    margin-right: 10%;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.header .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+}
+
+.header .links .icon span:first-child {
+    width: 100%;
+}
+
+.header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: var(--main-duration);
+}
+
+.header .links .icon span:last-child {
+    width: 100%;
+}
+
+.header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+}
+
+.header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+
+.header .links:hover ul {
+    display: block;
+}
+
+.header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: var(--main-duration);
+}
+
+.header .links ul li a:hover {
+    padding-left: 25px;
+}
+
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
